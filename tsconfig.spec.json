@@ -1,0 +1,7 @@
+/* Test build. Mirrors the publish build but keeps the specs, which tsconfig.schematics.json
+   excludes so they never reach the package. Emits beside the sources, where node --test reads them. */
+{
+	"extends": "./tsconfig.schematics.json",
+	"include": ["schematics/**/*.ts"],
+	"exclude": []
+}

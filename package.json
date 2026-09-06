@@ -1,6 +1,6 @@
 {
 	"name": "ng-hub-ui",
-	"version": "0.1.7",
+	"version": "0.2.0",
 	"license": "MIT",
 	"description": "Interactive ng add installer for the ng-hub-ui Angular library family.",
 	"author": "Carlos Morcillo <carlos.morcillo@me.com> (https://www.carlosmorcillo.com)",
@@ -27,9 +27,13 @@
 		"schematics/ng-add/resolve-dependency-entries.js",
 		"schematics/ng-add/schema.json"
 	],
+	"scripts": {
+		"pretest": "tsc -p tsconfig.spec.json",
+		"test": "node --test schematics/ng-add/index.spec.js"
+	},
 	"peerDependencies": {
-		"@angular/common": ">=17.3.0",
-		"@angular/core": ">=17.3.0"
+		"@angular/common": ">=18.0.0",
+		"@angular/core": ">=18.0.0"
 	},
 	"dependencies": {
 		"@angular-devkit/schematics": "^22.0.0"

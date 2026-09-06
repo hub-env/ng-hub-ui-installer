@@ -10,13 +10,16 @@ The official installer and entry point for the **ng-hub-ui** family of Angular c
 
 This package is part of [Hub UI](https://hubui.dev/en/), a collection of Angular component libraries for standalone apps.
 
-- Docs: https://hubui.dev/en/
-- Live examples: https://hubui.dev/en/
+- Hub UI: https://hubui.dev/en/
+- Reference for each library the installer can add: `https://hubui.dev/en/<library>/overview/` — for example https://hubui.dev/en/modal/overview/
+
+The installer itself has no page on the site: what the schematic does is documented here.
 
 ## 🧩 Library Family `ng-hub-ui`
 
 `ng-hub-ui` is the family installer. These are the libraries that make up the ecosystem:
 
+- [**ng-hub-ui-action-sheet**](https://www.npmjs.com/package/ng-hub-ui-action-sheet)
 - [**ng-hub-ui-avatar**](https://www.npmjs.com/package/ng-hub-ui-avatar)
 - [**ng-hub-ui-badges**](https://www.npmjs.com/package/ng-hub-ui-badges)
 - [**ng-hub-ui-board**](https://www.npmjs.com/package/ng-hub-ui-board)
@@ -42,7 +45,7 @@ This package is part of [Hub UI](https://hubui.dev/en/), a collection of Angular
 - [**ng-hub-ui-toast**](https://www.npmjs.com/package/ng-hub-ui-toast)
 - [**ng-hub-ui-utils**](https://www.npmjs.com/package/ng-hub-ui-utils)
 
-> [`ng-hub-ui-accordion`](https://www.npmjs.com/package/ng-hub-ui-accordion) is **deprecated** — its accordion view lives on, improved, in [`ng-hub-ui-panels`](https://www.npmjs.com/package/ng-hub-ui-panels). `ng-hub-ui-action-sheet` exists in the monorepo but is not yet published to npm, so the installer does not offer it.
+> [`ng-hub-ui-accordion`](https://www.npmjs.com/package/ng-hub-ui-accordion) is **deprecated** — its accordion view lives on, improved, in [`ng-hub-ui-panels`](https://www.npmjs.com/package/ng-hub-ui-panels).
 
 ---
 
@@ -82,6 +85,7 @@ ng add ng-hub-ui
 
 ```
 ? Which ng-hub-ui libraries do you want to install? (Press <space> to select, <a> to toggle all, <i> to invert selection)
+ ◯ Action Sheet
  ◯ Avatar
  ◯ Badges & Chips
  ◯ Board (Kanban)
@@ -112,7 +116,7 @@ Select one or more libraries with the space bar and confirm. The schematic resol
 
 ### Non-interactive
 
-You can skip the prompt by passing the libraries directly. Use the short identifiers shown in the prompt (the part before the label), comma-separated or repeated:
+You can skip the prompt by passing the libraries directly. The prompt shows only the labels, so take the identifiers from the [Installable libraries](#-installable-libraries) table below; pass them comma-separated or repeated:
 
 ```bash
 # Comma-separated
@@ -155,34 +159,35 @@ The `ng-add` schematic performs exactly the following steps:
 
 The schematic can install the following libraries. The identifier on the left is what you pass to `--libraries`; transitive packages are added automatically.
 
-| Identifier    | npm package                                                                  | Auto-added dependencies              |
-| ------------- | ---------------------------------------------------------------------------- | ------------------------------------ |
-| `avatar`      | [ng-hub-ui-avatar](https://www.npmjs.com/package/ng-hub-ui-avatar)           | `ng-hub-ui-utils`                    |
-| `badges`      | [ng-hub-ui-badges](https://www.npmjs.com/package/ng-hub-ui-badges)           | `ng-hub-ui-utils`                    |
-| `board`       | [ng-hub-ui-board](https://www.npmjs.com/package/ng-hub-ui-board)             | `ng-hub-ui-utils`                    |
-| `breadcrumbs` | [ng-hub-ui-breadcrumbs](https://www.npmjs.com/package/ng-hub-ui-breadcrumbs) | —                                    |
-| `buttons`     | [ng-hub-ui-buttons](https://www.npmjs.com/package/ng-hub-ui-buttons)         | `ng-hub-ui-utils`                    |
-| `calendar`    | [ng-hub-ui-calendar](https://www.npmjs.com/package/ng-hub-ui-calendar)       | `ng-hub-ui-utils`                    |
-| `ds`          | [ng-hub-ui-ds](https://www.npmjs.com/package/ng-hub-ui-ds)                   | —                                    |
-| `forms`       | [ng-hub-ui-forms](https://www.npmjs.com/package/ng-hub-ui-forms)             | `ng-hub-ui-utils`                    |
-| `history`     | [ng-hub-ui-history](https://www.npmjs.com/package/ng-hub-ui-history)         | —                                    |
-| `icons`       | [ng-hub-ui-icons](https://www.npmjs.com/package/ng-hub-ui-icons)             | —                                    |
-| `loading`     | [ng-hub-ui-loading](https://www.npmjs.com/package/ng-hub-ui-loading)         | `ng-hub-ui-utils`                    |
-| `metrics`     | [ng-hub-ui-metrics](https://www.npmjs.com/package/ng-hub-ui-metrics)         | `ng-hub-ui-utils`                    |
-| `milestones`  | [ng-hub-ui-milestones](https://www.npmjs.com/package/ng-hub-ui-milestones)   | `ng-hub-ui-utils`                    |
-| `modal`       | [ng-hub-ui-modal](https://www.npmjs.com/package/ng-hub-ui-modal)             | `ng-hub-ui-utils`                    |
-| `nav`         | [ng-hub-ui-nav](https://www.npmjs.com/package/ng-hub-ui-nav)                 | `ng-hub-ui-utils`                    |
-| `paginable`   | [ng-hub-ui-paginable](https://www.npmjs.com/package/ng-hub-ui-paginable)     | `ng-hub-ui-utils`                    |
-| `panels`      | [ng-hub-ui-panels](https://www.npmjs.com/package/ng-hub-ui-panels)           | `ng-hub-ui-ds`, `ng-hub-ui-utils`    |
-| `portal`      | [ng-hub-ui-portal](https://www.npmjs.com/package/ng-hub-ui-portal)           | `ng-hub-ui-utils`                    |
-| `signature`   | [ng-hub-ui-signature](https://www.npmjs.com/package/ng-hub-ui-signature)     | `ng-hub-ui-forms`, `ng-hub-ui-utils` |
-| `skeleton`    | [ng-hub-ui-skeleton](https://www.npmjs.com/package/ng-hub-ui-skeleton)       | —                                    |
-| `sortable`    | [ng-hub-ui-sortable](https://www.npmjs.com/package/ng-hub-ui-sortable)       | `sortablejs`                         |
-| `stepper`     | [ng-hub-ui-stepper](https://www.npmjs.com/package/ng-hub-ui-stepper)         | `ng-hub-ui-utils`                    |
-| `toast`       | [ng-hub-ui-toast](https://www.npmjs.com/package/ng-hub-ui-toast)             | `ng-hub-ui-utils`                    |
-| `utils`       | [ng-hub-ui-utils](https://www.npmjs.com/package/ng-hub-ui-utils)             | —                                    |
+| Identifier     | npm package                                                                    | Auto-added dependencies              |
+| -------------- | ------------------------------------------------------------------------------ | ------------------------------------ |
+| `action-sheet` | [ng-hub-ui-action-sheet](https://www.npmjs.com/package/ng-hub-ui-action-sheet) | —                                    |
+| `avatar`       | [ng-hub-ui-avatar](https://www.npmjs.com/package/ng-hub-ui-avatar)             | `ng-hub-ui-utils`                    |
+| `badges`       | [ng-hub-ui-badges](https://www.npmjs.com/package/ng-hub-ui-badges)             | `ng-hub-ui-utils`                    |
+| `board`        | [ng-hub-ui-board](https://www.npmjs.com/package/ng-hub-ui-board)               | `ng-hub-ui-utils`                    |
+| `breadcrumbs`  | [ng-hub-ui-breadcrumbs](https://www.npmjs.com/package/ng-hub-ui-breadcrumbs)   | —                                    |
+| `buttons`      | [ng-hub-ui-buttons](https://www.npmjs.com/package/ng-hub-ui-buttons)           | `ng-hub-ui-utils`                    |
+| `calendar`     | [ng-hub-ui-calendar](https://www.npmjs.com/package/ng-hub-ui-calendar)         | `ng-hub-ui-utils`                    |
+| `ds`           | [ng-hub-ui-ds](https://www.npmjs.com/package/ng-hub-ui-ds)                     | —                                    |
+| `forms`        | [ng-hub-ui-forms](https://www.npmjs.com/package/ng-hub-ui-forms)               | `ng-hub-ui-utils`                    |
+| `history`      | [ng-hub-ui-history](https://www.npmjs.com/package/ng-hub-ui-history)           | —                                    |
+| `icons`        | [ng-hub-ui-icons](https://www.npmjs.com/package/ng-hub-ui-icons)               | —                                    |
+| `loading`      | [ng-hub-ui-loading](https://www.npmjs.com/package/ng-hub-ui-loading)           | `ng-hub-ui-utils`                    |
+| `metrics`      | [ng-hub-ui-metrics](https://www.npmjs.com/package/ng-hub-ui-metrics)           | `ng-hub-ui-utils`                    |
+| `milestones`   | [ng-hub-ui-milestones](https://www.npmjs.com/package/ng-hub-ui-milestones)     | `ng-hub-ui-utils`                    |
+| `modal`        | [ng-hub-ui-modal](https://www.npmjs.com/package/ng-hub-ui-modal)               | `ng-hub-ui-utils`                    |
+| `nav`          | [ng-hub-ui-nav](https://www.npmjs.com/package/ng-hub-ui-nav)                   | `ng-hub-ui-utils`                    |
+| `paginable`    | [ng-hub-ui-paginable](https://www.npmjs.com/package/ng-hub-ui-paginable)       | `ng-hub-ui-utils`                    |
+| `panels`       | [ng-hub-ui-panels](https://www.npmjs.com/package/ng-hub-ui-panels)             | `ng-hub-ui-ds`, `ng-hub-ui-utils`    |
+| `portal`       | [ng-hub-ui-portal](https://www.npmjs.com/package/ng-hub-ui-portal)             | `ng-hub-ui-utils`                    |
+| `signature`    | [ng-hub-ui-signature](https://www.npmjs.com/package/ng-hub-ui-signature)       | `ng-hub-ui-forms`, `ng-hub-ui-utils` |
+| `skeleton`     | [ng-hub-ui-skeleton](https://www.npmjs.com/package/ng-hub-ui-skeleton)         | —                                    |
+| `sortable`     | [ng-hub-ui-sortable](https://www.npmjs.com/package/ng-hub-ui-sortable)         | `sortablejs`                         |
+| `stepper`      | [ng-hub-ui-stepper](https://www.npmjs.com/package/ng-hub-ui-stepper)           | `ng-hub-ui-utils`                    |
+| `toast`        | [ng-hub-ui-toast](https://www.npmjs.com/package/ng-hub-ui-toast)               | `ng-hub-ui-utils`                    |
+| `utils`        | [ng-hub-ui-utils](https://www.npmjs.com/package/ng-hub-ui-utils)               | —                                    |
 
-> `ng-hub-ui-action-sheet` is not offered by the installer yet (pre-release). `ng-hub-ui-accordion` is deprecated — pick `panels` instead.
+> `ng-hub-ui-accordion` is deprecated — pick `panels` instead.
 
 ## ✋ Manual installation
 
