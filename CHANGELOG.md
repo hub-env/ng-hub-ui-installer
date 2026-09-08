@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.1] - 2026-09-08
+
+### Fixed
+
+- **Four documents said the installer has no page on the documentation site.** It has one now —
+  https://hubui.dev/en/installer/overview/ — with the commands, the prompt transcript and what a
+  selection actually writes into `package.json`. Both READMEs and `FUNCTIONALITIES.md` link to it
+  instead of denying it, and the 0.1.7 entry below, which explained the `homepage` by saying this
+  package had no page to point at, is left as the record of what was true then.
+
+### Changed
+
+- **`homepage` points at the installer's own page** rather than at the family root. It is the
+  link a registry shows beside the package, and every other library in the family already points
+  at its own documentation. Metadata only — no code, no schematic behaviour, no catalogue change.
+
 ## [0.2.0] - 2026-09-06
 
 ### Added

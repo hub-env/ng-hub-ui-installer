@@ -13,7 +13,7 @@ This package is part of [Hub UI](https://hubui.dev/en/), a collection of Angular
 - Hub UI: https://hubui.dev/en/
 - Reference for each library the installer can add: `https://hubui.dev/en/<library>/overview/` — for example https://hubui.dev/en/modal/overview/
 
-The installer itself has no page on the site: what the schematic does is documented here.
+- The installer's own page: https://hubui.dev/en/installer/overview/ — the commands, the prompt and what a selection writes, with the full option and catalogue tables kept here.
 
 ## 🧩 Library Family `ng-hub-ui`
 

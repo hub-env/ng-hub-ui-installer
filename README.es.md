@@ -13,7 +13,7 @@ Este paquete forma parte de [Hub UI](https://hubui.dev/en/), una colección de b
 - Hub UI: https://hubui.dev/en/
 - Referencia de cada biblioteca que el instalador puede añadir: `https://hubui.dev/en/<biblioteca>/overview/` — por ejemplo https://hubui.dev/en/modal/overview/
 
-El instalador no tiene página propia en el sitio: lo que hace el schematic está documentado aquí.
+- Página propia del instalador: https://hubui.dev/es/installer/overview/ — las órdenes, el diálogo y lo que escribe una selección; las tablas completas de opciones y catálogo siguen aquí.
 
 ## 🧩 Familia de bibliotecas `ng-hub-ui`
 

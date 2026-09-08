@@ -2,7 +2,7 @@
 
 This table details the functionalities of the `ng-hub-ui` package and indicates which ones the README documents.
 
-`ng-hub-ui` ships no components: it is the `ng-add` schematic that installs the rest of the family. There is nothing to render, so there are no interactive examples and no page of its own on the documentation site — the last column says whether the behaviour is written down in [README.md](./README.md), not whether a demo exists.
+`ng-hub-ui` ships no components: it is the `ng-add` schematic that installs the rest of the family. There is nothing to render, so the documentation page at https://hubui.dev/en/installer/overview/ has an Overview and an Examples tab and no API or Styles tab at all — a schematic has no inputs, outputs, template slots or custom properties. The last column below says whether the behaviour is written down in [README.md](./README.md), not whether a demo exists.
 
 ## Invocation
 
