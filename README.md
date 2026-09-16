@@ -11,6 +11,7 @@ The official installer and entry point for the **ng-hub-ui** family of Angular c
 This package is part of [Hub UI](https://hubui.dev/en/), a collection of Angular component libraries for standalone apps.
 
 - Hub UI: https://hubui.dev/en/
+- Hub UI on GitHub (issues, roadmap and contributing): https://github.com/hub-env/hub-ui
 - Reference for each library the installer can add: `https://hubui.dev/en/<library>/overview/` — for example https://hubui.dev/en/modal/overview/
 
 - The installer's own page: https://hubui.dev/en/installer/overview/ — the commands, the prompt and what a selection writes, with the full option and catalogue tables kept here.
@@ -205,8 +206,8 @@ We welcome all contributions! Here's how you can help:
 
 ```bash
 # Clone the repository
-git clone https://github.com/carlos-morcillo/ng-hub-ui.git
-cd ng-hub-ui
+git clone --recurse-submodules https://github.com/hub-env/hub-ui.git
+cd hub-ui
 
 # Install dependencies
 npm install
@@ -218,7 +219,7 @@ npm install
 4. **Push** to your branch: `git push origin feature/amazing-feature`
 5. **Submit** a pull request
 
-Found a bug or have a request? Open an issue: https://github.com/carlos-morcillo/ng-hub-ui/issues
+Found a bug or have a request? Open an issue: https://github.com/hub-env/hub-ui/issues
 
 ## ☕ Support
 

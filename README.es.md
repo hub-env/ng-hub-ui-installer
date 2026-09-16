@@ -11,6 +11,7 @@ El instalador oficial y punto de entrada de la familia de bibliotecas de compone
 Este paquete forma parte de [Hub UI](https://hubui.dev/en/), una colección de bibliotecas de componentes Angular para aplicaciones standalone.
 
 - Hub UI: https://hubui.dev/en/
+- Hub UI en GitHub (incidencias, roadmap y cómo contribuir): https://github.com/hub-env/hub-ui
 - Referencia de cada biblioteca que el instalador puede añadir: `https://hubui.dev/en/<biblioteca>/overview/` — por ejemplo https://hubui.dev/en/modal/overview/
 
 - Página propia del instalador: https://hubui.dev/es/installer/overview/ — las órdenes, el diálogo y lo que escribe una selección; las tablas completas de opciones y catálogo siguen aquí.
@@ -205,8 +206,8 @@ Después importa y configura cada biblioteca siguiendo su propio README, enlazad
 
 ```bash
 # Clona el repositorio
-git clone https://github.com/carlos-morcillo/ng-hub-ui.git
-cd ng-hub-ui
+git clone --recurse-submodules https://github.com/hub-env/hub-ui.git
+cd hub-ui
 
 # Instala las dependencias
 npm install
@@ -218,7 +219,7 @@ npm install
 4. **Haz push** a tu rama: `git push origin feature/amazing-feature`
 5. **Abre** un pull request
 
-¿Has encontrado un error o tienes una petición? Abre una incidencia: https://github.com/carlos-morcillo/ng-hub-ui/issues
+¿Has encontrado un error o tienes una petición? Abre una incidencia: https://github.com/hub-env/hub-ui/issues
 
 ## ☕ Apoyo
 

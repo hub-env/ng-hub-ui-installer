@@ -6,7 +6,10 @@
 	"author": "Carlos Morcillo <carlos.morcillo@me.com> (https://www.carlosmorcillo.com)",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/carlos-morcillo/ng-hub-ui.git"
+		"url": "git+https://github.com/hub-env/ng-hub-ui-installer.git"
+	},
+	"bugs": {
+		"url": "https://github.com/hub-env/hub-ui/issues"
 	},
 	"homepage": "https://hubui.dev/en/installer/overview/",
 	"keywords": [
