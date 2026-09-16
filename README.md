@@ -204,14 +204,7 @@ Then import and configure each library following its own README, linked in the [
 
 We welcome all contributions! Here's how you can help:
 
-```bash
-# Clone the repository
-git clone --recurse-submodules https://github.com/hub-env/hub-ui.git
-cd hub-ui
-
-# Install dependencies
-npm install
-```
+Read the [contributing guide](https://github.com/hub-env/hub-ui/blob/main/CONTRIBUTING.md) first; the schematic's source lives in [hub-env/ng-hub-ui-installer](https://github.com/hub-env/ng-hub-ui-installer).
 
 1. **Fork** the repository
 2. **Create** a feature branch: `git checkout -b feature/amazing-feature`
