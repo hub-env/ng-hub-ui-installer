@@ -3,7 +3,7 @@
 	"version": "0.2.2",
 	"license": "MIT",
 	"description": "Interactive ng add installer for the ng-hub-ui Angular library family.",
-	"author": "Carlos Morcillo <carlos.morcillo@me.com> (https://www.carlosmorcillo.com)",
+	"author": "Carlos Morcillo Fernández <carlos.morcillo@me.com> (https://www.carlosmorcillo.com)",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/hub-env/ng-hub-ui-installer.git"
